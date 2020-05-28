@@ -22,3 +22,5 @@ run the following commands:
     sudo ldconfig
 
 Now the block should be available in GNU Radio
+
+Execute the example flow graph in 'examples' folder to see how the parameters are set and verify its operation
