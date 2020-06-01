@@ -1,11 +1,15 @@
-This is the Stream_Blocks-write-a-block package meant as a guide to building
-out-of-tree packages. To use the Stream_Blocks blocks, the Python namespaces
-is in 'Stream_Blocks', which is imported as:
+----- INSTALLATION GUIDE -----
+1. clone the folder to your PC
+2. navigate to gr-Stream_Blocks folder from the terminal
 
-    import Stream_Blocks
+run the following commands:
+    mkdir build
+    cd build
+    cmake ../
+    make
+    sudo make install
+    sudo ldconfig
 
-See the Doxygen documentation for details about the blocks available
-in this package. A quick listing of the details can be found in Python
-after importing by using:
+Now the block should be available in GNU Radio
 
-    help(Stream_Blocks)
+Execute the example flow graph in 'examples' folder to see how the parameters are set and verify its operation
