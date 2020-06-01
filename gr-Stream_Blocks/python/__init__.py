@@ -21,4 +21,5 @@ except ImportError:
 
 # import any pure python here
 from .SL_Matrix_Generator import SL_Matrix_Generator
+from .Websocket_Client import Websocket_Client
 #

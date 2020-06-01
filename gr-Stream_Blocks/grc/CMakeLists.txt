@@ -7,5 +7,6 @@
 #
 
 install(FILES
-    Stream_Blocks_SL_Matrix_Generator.block.yml DESTINATION share/gnuradio/grc/blocks
+    Stream_Blocks_SL_Matrix_Generator.block.yml
+    Stream_Blocks_Websocket_Client.block.yml DESTINATION share/gnuradio/grc/blocks
 )

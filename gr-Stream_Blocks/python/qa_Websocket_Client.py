@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
 # Copyright 2020 gr-Stream_Blocks author.
@@ -8,9 +8,9 @@
 
 from gnuradio import gr, gr_unittest
 from gnuradio import blocks
-from SL_Matrix_Generator import SL_Matrix_Generator
+from Websocket_Client import Websocket_Client
 
-class qa_SL_Matrix_Generator(gr_unittest.TestCase):
+class qa_Websocket_Client(gr_unittest.TestCase):
 
     def setUp(self):
         self.tb = gr.top_block()
@@ -25,4 +25,4 @@ class qa_SL_Matrix_Generator(gr_unittest.TestCase):
 
 
 if __name__ == '__main__':
-    gr_unittest.run(qa_SL_Matrix_Generator)
+    gr_unittest.run(qa_Websocket_Client)

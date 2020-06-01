@@ -14,20 +14,25 @@ print ("socket binded to %s" %(port))
 s.bind(('', port))
 # put the socket into listening mode 
 s.listen(5)      
-print ("socket is listening")           
+print ("socket is listening")
+
+print('Waiting for connection...')
+c, addr = s.accept()      
+print ('Got connection from', addr)
   
 # a forever loop until we interrupt it or  
 # an error occurs 
 while True: 
-  
    # Establish connection with client. 
-   c, addr = s.accept()      
-   print ('Got connection from', addr)
-  
+   receivedMsg=c.recv(1024).decode()
+   print (receivedMsg)
+   if (receivedMsg=='disconnect'):
+      break
+ 
    # send a thank you message to the client.  
    st="Messgage"
    byt=st.encode()              #this is require in python 3
    c.send(byt) 
   
-   # Close the connection with the client 
-   c.close() 
+# Close the connection with the client 
+c.close() 
